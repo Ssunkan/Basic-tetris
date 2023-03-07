@@ -1,0 +1,139 @@
+*{
+  font-family: "text.tff";
+}
+
+.container {
+  display: flex;
+  zoom: 127%;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 145px;
+}
+
+html { 
+  background: url(ill.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  text-align: right;
+  color: #040f2d;
+  
+}
+
+p{
+  color: whitesmoke;
+  text-align: center;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  background-image: url("tet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid white;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-color: #040f2d;
+  border-radius: 6px;
+}
+
+.audio {
+  display: table;
+  margin: auto;
+}
+
+.mini-grid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("tet.jpg");
+  border:3px solid white;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.center {
+  margin:auto;
+  display:table;
+}
+
+.btn {
+  border: 1px solid whitesmoke;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1, .btn2 {
+  color: whitesmoke;
+}
+
+.btn1:hover, .btn2:hover {
+  color: #040f2d;
+}
+
+.btn3:hover {
+  color: #040f2d;
+}
+
+.btn3 {
+  color: whitesmoke;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #040f2d;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn1::before, .btn2::before, .btn3::before{
+  top: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.btn1::before, .btn2::before, .btn3::before{
+  bottom: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn1::before, .btn2::before, .btn3::before{
+  height: 180%;
+}
+
+.btn1:hover::before, .btn2:hover::before, .btn3:hover::before{
+  height: 180%;
+}
+
+.btn1:hover::before, .btn2:hover::before, .btn3:hover::before{
+  height: 0%;
+}
+
